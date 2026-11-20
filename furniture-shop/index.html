@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURA & OAK | Modern & Timeless Furniture</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="container announcement-content">
+      <span><i class="fa-solid fa-truck-fast"></i> Complimentary Nationwide White-Glove Delivery on orders over $500</span>
+      <div class="top-links">
+        <a href="#about">Our Craft</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Support</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <span class="logo-mark"><i class="fa-solid fa-couch"></i></span>
+        <div class="brand-text">
+          <span class="brand-name">AURA &amp; OAK</span>
+          <span class="brand-tagline">STUDIO LIVING</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#categories">Categories</a>
+        <a href="#catalog">Shop All</a>
+        <a href="#craft">Craftsmanship</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" id="searchInput" placeholder="Search furniture, styles..." aria-label="Search furniture">
+        </div>
+        
+        <button class="icon-btn" id="wishlistToggleBtn" title="Wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span class="badge" id="wishlistCount">0</span>
+        </button>
+
+        <button class="icon-btn cart-btn" id="cartToggleBtn" title="Shopping Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="badge" id="cartCount">0</span>
+        </button>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="pill-badge">
+            <i class="fa-solid fa-sparkles"></i> 2026 Architectural Collection
+          </div>
+          <h1 class="hero-title">
+            Bespoke Furniture for <em>Warm, Mindful</em> Spaces.
+          </h1>
+          <p class="hero-description">
+            Experience organic shapes, sustainably certified solid hardwoods, and master-upholstered comfort engineered for generations of inspired living.
+          </p>
+          <div class="hero-buttons">
+            <a href="#catalog" class="btn btn-primary">
+              Explore Collection <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#craft" class="btn btn-secondary">
+              <i class="fa-solid fa-play"></i> Our Workshop
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">FSC Solid Oak & Walnut</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">10 Yr</span>
+              <span class="stat-label">Structural Guarantee</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">4.9/5</span>
+              <span class="stat-label">Over 14,000 Happy Homes</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="hero-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1000&q=80" alt="Nordic Emerald Velvet Sofa in Warm Interior" class="hero-img">
+            <div class="floating-card product-highlight-card">
+              <div class="highlight-img">
+                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=300&q=80" alt="Accent Armchair">
+              </div>
+              <div class="highlight-info">
+                <span class="highlight-tag">Best Seller</span>
+                <span class="highlight-title">Koto Armchair</span>
+                <span class="highlight-price">$540</span>
+              </div>
+              <button class="quick-add-btn" onclick="addToCart(4)" title="Quick Add">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Features Banner -->
+    <section class="trust-banner">
+      <div class="container trust-grid">
+        <div class="trust-card">
+          <div class="trust-icon"><i class="fa-solid fa-cube"></i></div>
+          <div class="trust-text">
+            <h4>Solid Hardwood Build</h4>
+            <p>Kiln-dried oak, teak & American walnut</p>
+          </div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <div class="trust-text">
+            <h4>10-Year Warranty</h4>
+            <p>Comprehensive frame & joinery coverage</p>
+          </div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+          <div class="trust-text">
+            <h4>30-Day Home Trial</h4>
+            <p>Live with it in your room risk-free</p>
+          </div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-icon"><i class="fa-solid fa-leaf"></i></div>
+          <div class="trust-text">
+            <h4>Ethical & Non-Toxic</h4>
+            <p>Zero VOC finishes & recycled packaging</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Room Categories -->
+    <section class="categories-section" id="categories">
+      <div class="container">
+        <div class="section-header">
+          <span class="sub-heading">Spaces & Living</span>
+          <h2 class="section-title">Shop by Room</h2>
+          <p class="section-subtitle">Curated collections designed to create harmonic, clutter-free aesthetics in every corner of your home.</p>
+        </div>
+
+        <div class="categories-grid">
+          <div class="category-card" onclick="filterByCategory('Living Room')">
+            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=700&q=80" alt="Living Room">
+            <div class="category-overlay">
+              <span class="cat-count">12 Items</span>
+              <h3 class="cat-title">Living Room</h3>
+              <p class="cat-desc">Sofas, accent chairs & coffee tables</p>
+              <span class="cat-btn">Explore <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+
+          <div class="category-card" onclick="filterByCategory('Bedroom')">
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=700&q=80" alt="Bedroom">
+            <div class="category-overlay">
+              <span class="cat-count">8 Items</span>
+              <h3 class="cat-title">Bedroom</h3>
+              <p class="cat-desc">Solid wood beds, nightstands & dressers</p>
+              <span class="cat-btn">Explore <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+
+          <div class="category-card" onclick="filterByCategory('Dining')">
+            <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=700&q=80" alt="Dining Room">
+            <div class="category-overlay">
+              <span class="cat-count">9 Items</span>
+              <h3 class="cat-title">Dining Room</h3>
+              <p class="cat-desc">Extendable tables, bench seating & buffets</p>
+              <span class="cat-btn">Explore <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+
+          <div class="category-card" onclick="filterByCategory('Office')">
+            <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=700&q=80" alt="Workspace">
+            <div class="category-overlay">
+              <span class="cat-count">6 Items</span>
+              <h3 class="cat-title">Workspace & Office</h3>
+              <p class="cat-desc">Solid executive desks & ergonomic seating</p>
+              <span class="cat-btn">Explore <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Products Catalog -->
+    <section class="catalog-section" id="catalog">
+      <div class="container">
+        <div class="section-header catalog-header-bar">
+          <div>
+            <span class="sub-heading">Handcrafted Quality</span>
+            <h2 class="section-title">The Complete Catalog</h2>
+          </div>
+          <div class="catalog-controls">
+            <!-- Filter Pills -->
+            <div class="filter-pills" id="filterPills">
+              <button class="filter-pill active" data-category="All">All Pieces</button>
+              <button class="filter-pill" data-category="Living Room">Living Room</button>
+              <button class="filter-pill" data-category="Bedroom">Bedroom</button>
+              <button class="filter-pill" data-category="Dining">Dining</button>
+              <button class="filter-pill" data-category="Office">Office</button>
+              <button class="filter-pill" data-category="Decor">Lighting &amp; Decor</button>
+            </div>
+
+            <!-- Sort Selection -->
+            <div class="sort-wrapper">
+              <label for="sortSelect"><i class="fa-solid fa-arrow-down-short-wide"></i></label>
+              <select id="sortSelect">
+                <option value="featured">Featured Picks</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="rating">Highest Rated</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dynamic Product Grid -->
+        <div class="product-grid" id="productGrid">
+          <!-- Populated by JavaScript -->
+        </div>
+
+        <!-- No Results Fallback -->
+        <div class="no-results" id="noResults" style="display: none;">
+          <i class="fa-solid fa-couch-slash"></i>
+          <h3>No matching furniture found</h3>
+          <p>Try clearing your search query or switching categories.</p>
+          <button class="btn btn-secondary" onclick="resetFilters()">Reset All Filters</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Craftsmanship & Quality Section -->
+    <section class="craft-section" id="craft">
+      <div class="container craft-grid">
+        <div class="craft-image-composition">
+          <img src="https://images.unsplash.com/photo-1540932239986-30128078f3c5?auto=format&fit=crop&w=800&q=80" alt="Woodworking Craft" class="craft-img-large">
+          <div class="craft-stat-badge">
+            <span class="badge-accent">35+</span>
+            <span>Years of Master Joinery Experience</span>
+          </div>
+        </div>
+
+        <div class="craft-content">
+          <span class="sub-heading">Artisan Commitment</span>
+          <h2 class="section-title">Built with Patience. Made to Outlive Trends.</h2>
+          <p class="craft-lead">
+            Every piece from Aura &amp; Oak starts as hand-selected timber from responsibly managed European and North American forests. We reject fast furniture disposable culture in favor of mortise-and-tenon joinery and non-toxic plant waxes.
+          </p>
+
+          <div class="craft-features-list">
+            <div class="craft-feature">
+              <div class="feature-icon"><i class="fa-solid fa-tree"></i></div>
+              <div>
+                <h4>Sustainably Harvested Timber</h4>
+                <p>100% certified FSC Grade-A white oak, walnut, and natural ash wood.</p>
+              </div>
+            </div>
+
+            <div class="craft-feature">
+              <div class="feature-icon"><i class="fa-solid fa-brush"></i></div>
+              <div>
+                <h4>Zero-VOC Natural Finishes</h4>
+                <p>Rubbed by hand with organic linseed oil, beeswax, and low-sheen eco-sealers.</p>
+              </div>
+            </div>
+
+            <div class="craft-feature">
+              <div class="feature-icon"><i class="fa-solid fa-award"></i></div>
+              <div>
+                <h4>Traditional Joinery</h4>
+                <p>No flimsy veneer boards or plastic cam-locks — precision dovetails and solid brass hardware.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="reviews-section" id="reviews">
+      <div class="container">
+        <div class="section-header">
+          <span class="sub-heading">Customer Stories</span>
+          <h2 class="section-title">Cherished in Real Homes</h2>
+          <p class="section-subtitle">Read how our handcrafted furniture transforms living spaces across the country.</p>
+        </div>
+
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-quote">"The Astrid Velvet Sofa is stunning. The fabric is durable yet incredibly soft, and you can instantly feel the solid hardwood foundation when you sit down. Worth every dollar."</p>
+            <div class="reviewer-meta">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Eleanor Vance" class="avatar">
+              <div>
+                <span class="reviewer-name">Eleanor Vance</span>
+                <span class="reviewer-loc">San Francisco, CA • Verified Buyer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-quote">"I was skeptical ordering a large dining table online, but the white-glove setup team assembled it in 20 minutes. The solid oak grain pattern is an absolute showstopper when hosting dinner."</p>
+            <div class="reviewer-meta">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Marcus Sterling" class="avatar">
+              <div>
+                <span class="reviewer-name">Marcus Sterling</span>
+                <span class="reviewer-loc">Austin, TX • Verified Buyer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-quote">"The Bergen Bed Frame does not creak, looks like a gallery sculpture, and the under-bed clearance is generous. It gave our master bedroom an instant luxury boutique hotel vibe."</p>
+            <div class="reviewer-meta">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80" alt="Sophia Lin" class="avatar">
+              <div>
+                <span class="reviewer-name">Sophia Lin</span>
+                <span class="reviewer-loc">Seattle, WA • Verified Buyer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+      <div class="container faq-container">
+        <div class="section-header">
+          <span class="sub-heading">Got Questions?</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>How does your 30-Day Home Trial work?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="accordion-body">
+              <p>We want you to feel confident that the piece fits your home lighting and space. If you're not in love within 30 days of arrival, we'll coordinate a pick-up and refund your purchase price in full.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>What is included in White-Glove Delivery?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="accordion-body">
+              <p>White-glove delivery includes scheduled room-of-choice placement, complete assembly by our certified technicians, and full removal of all packaging debris and protective wrapping.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>How do I care for solid wood furniture?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="accordion-body">
+              <p>Wipe with a soft, dry or slightly damp micro-fiber cloth along the natural wood grain. Avoid harsh chemical cleaners and silicone sprays. We also include an Aura &amp; Oak organic wax tin with every solid wood purchase.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>Are your fabrics pet and family friendly?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="accordion-body">
+              <p>Yes! Our textured bouclés and high-performance velvets undergo Martindale rub tests exceeding 50,000 double rubs, and come pre-treated with liquid-repellent and stain-resistant finishes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter CTA -->
+    <section class="newsletter-section">
+      <div class="container newsletter-box">
+        <div class="newsletter-content">
+          <span class="newsletter-pill"><i class="fa-solid fa-tag"></i> Special Welcome Offer</span>
+          <h2>Receive $50 Off Your First Order</h2>
+          <p>Join our design club for early access to seasonal capsule drops, styling lookbooks, and private sales.</p>
+          <form class="newsletter-form" id="newsletterForm" onsubmit="handleNewsletter(event)">
+            <input type="email" placeholder="Enter your email address" required aria-label="Email address">
+            <button type="submit" class="btn btn-primary">Claim Discount</button>
+          </form>
+          <span class="newsletter-subtext">*Applicable on orders over $300. Unsubscribe at any time.</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="brand-logo footer-logo">
+          <span class="logo-mark"><i class="fa-solid fa-couch"></i></span>
+          <div class="brand-text">
+            <span class="brand-name">AURA &amp; OAK</span>
+            <span class="brand-tagline">STUDIO LIVING</span>
+          </div>
+        </a>
+        <p class="footer-desc">
+          Crafting architectural furniture that balances Scandinavian warmth, clean Japanese lines, and enduring solid wood integrity.
+        </p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#catalog" onclick="filterByCategory('Living Room')">Living Room Sofas</a></li>
+          <li><a href="#catalog" onclick="filterByCategory('Bedroom')">Bedrooms &amp; Dressers</a></li>
+          <li><a href="#catalog" onclick="filterByCategory('Dining')">Dining Tables &amp; Chairs</a></li>
+          <li><a href="#catalog" onclick="filterByCategory('Office')">Ergonomic Desks</a></li>
+          <li><a href="#catalog" onclick="filterByCategory('Decor')">Lighting &amp; Mirrors</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Support &amp; Care</h4>
+        <ul>
+          <li><a href="#faq">Delivery &amp; Assembly</a></li>
+          <li><a href="#faq">30-Day Return Policy</a></li>
+          <li><a href="#craft">Timber Care Guide</a></li>
+          <li><a href="#faq">Warranty Registration</a></li>
+          <li><a href="#faq">Trade &amp; Interior Program</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Studio &amp; Showroom</h4>
+        <p><i class="fa-solid fa-location-dot"></i> 482 Timberworks Lane, SoHo District, NY 10013</p>
+        <p><i class="fa-solid fa-phone"></i> +1 (800) 492-9382</p>
+        <p><i class="fa-solid fa-envelope"></i> hello@auraoakstudio.com</p>
+        <p><i class="fa-solid fa-clock"></i> Mon - Sat: 9:00 AM - 7:00 PM</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>&copy; 2026 Aura &amp; Oak Studio, Inc. All rights reserved.</p>
+        <div class="payment-badges">
+          <span><i class="fa-brands fa-cc-visa"></i> Visa</span>
+          <span><i class="fa-brands fa-cc-mastercard"></i> Mastercard</span>
+          <span><i class="fa-brands fa-cc-apple-pay"></i> Apple Pay</span>
+          <span><i class="fa-brands fa-cc-paypal"></i> PayPal</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide-Over Shopping Cart Drawer -->
+  <div class="drawer-backdrop" id="cartBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping Cart">
+    <div class="drawer-header">
+      <h3>Your Bag (<span id="drawerCartCount">0</span>)</h3>
+      <button class="close-drawer-btn" id="closeCartBtn" aria-label="Close Cart">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <!-- Free shipping meter -->
+    <div class="shipping-meter-container">
+      <div class="shipping-meter-text" id="shippingMeterText">
+        Add $150 more for <strong>Free White-Glove Delivery</strong>!
+      </div>
+      <div class="shipping-meter-bar">
+        <div class="shipping-meter-fill" id="shippingMeterFill" style="width: 0%;"></div>
+      </div>
+    </div>
+
+    <div class="drawer-body" id="cartItemsList">
+      <!-- Cart items injected here -->
+    </div>
+
+    <div class="drawer-footer" id="cartDrawerFooter">
+      <div class="promo-box">
+        <input type="text" id="promoInput" placeholder="Promo code (e.g. AURA10)">
+        <button class="btn btn-sm btn-secondary" onclick="applyPromo()">Apply</button>
+      </div>
+      <div id="promoMessage" class="promo-status"></div>
+
+      <div class="summary-line">
+        <span>Subtotal</span>
+        <span id="cartSubtotal">$0.00</span>
+      </div>
+      <div class="summary-line" id="discountLine" style="display: none; color: #16a34a;">
+        <span>Discount (10%)</span>
+        <span id="cartDiscount">-$0.00</span>
+      </div>
+      <div class="summary-line">
+        <span>Estimated Delivery</span>
+        <span id="cartShipping">Calculated</span>
+      </div>
+      <div class="summary-line total-line">
+        <span>Total</span>
+        <span id="cartTotal">$0.00</span>
+      </div>
+
+      <button class="btn btn-primary btn-block checkout-btn" onclick="openCheckoutModal()">
+        Proceed to Secure Checkout <i class="fa-solid fa-lock"></i>
+      </button>
+      <p class="safe-checkout-note"><i class="fa-solid fa-shield-check"></i> 256-Bit SSL Encrypted Checkout</p>
+    </div>
+  </aside>
+
+  <!-- Product Details Modal (Quick View) -->
+  <div class="modal-backdrop" id="productModalBackdrop"></div>
+  <div class="product-modal" id="productModal" role="dialog" aria-modal="true">
+    <button class="close-modal-btn" id="closeModalBtn" aria-label="Close Product Details">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <div class="modal-content" id="modalProductContent">
+      <!-- Injected by JavaScript -->
+    </div>
+  </div>
+
+  <!-- Wishlist Drawer / Modal -->
+  <div class="drawer-backdrop" id="wishlistBackdrop"></div>
+  <aside class="cart-drawer wishlist-drawer" id="wishlistDrawer" aria-label="Your Wishlist">
+    <div class="drawer-header">
+      <h3>Saved Items (<span id="drawerWishlistCount">0</span>)</h3>
+      <button class="close-drawer-btn" id="closeWishlistBtn" aria-label="Close Wishlist">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="drawer-body" id="wishlistItemsList">
+      <!-- Injected by JavaScript -->
+    </div>
+  </aside>
+
+  <!-- Checkout Simulator Modal -->
+  <div class="modal-backdrop" id="checkoutBackdrop"></div>
+  <div class="product-modal checkout-modal" id="checkoutModal">
+    <button class="close-modal-btn" onclick="closeCheckoutModal()">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <div class="checkout-modal-content">
+      <h2>Complete Your Purchase</h2>
+      <p class="checkout-sub">Simulate a real checkout transaction to see your order placement in action.</p>
+
+      <form id="checkoutForm" onsubmit="processOrder(event)">
+        <div class="form-section-title">1. Shipping Information</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" required placeholder="Jane" value="Jane">
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" required placeholder="Doe" value="Doe">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Delivery Address</label>
+          <input type="text" required placeholder="123 Serene Grove, Apt 4B" value="123 Serene Grove, Apt 4B">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>City</label>
+            <input type="text" required placeholder="New York" value="New York">
+          </div>
+          <div class="form-group">
+            <label>Postal Code</label>
+            <input type="text" required placeholder="10001" value="10001">
+          </div>
+        </div>
+
+        <div class="form-section-title">2. Payment Method</div>
+        <div class="payment-options">
+          <label class="payment-option selected">
+            <input type="radio" name="paymentMethod" value="card" checked>
+            <span><i class="fa-regular fa-credit-card"></i> Credit / Debit Card</span>
+          </label>
+          <label class="payment-option">
+            <input type="radio" name="paymentMethod" value="cod">
+            <span><i class="fa-solid fa-truck-ramp-box"></i> Pay Upon Delivery</span>
+          </label>
+        </div>
+
+        <div class="order-summary-box">
+          <div class="summary-line">
+            <span>Items Subtotal:</span>
+            <span id="checkoutSubtotal">$0.00</span>
+          </div>
+          <div class="summary-line total-line">
+            <span>Final Total:</span>
+            <span id="checkoutTotal">$0.00</span>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block checkout-submit-btn">
+          Confirm &amp; Place Order <i class="fa-solid fa-circle-check"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Order Success Confirmation Modal -->
+  <div class="modal-backdrop" id="successBackdrop"></div>
+  <div class="product-modal success-modal" id="successModal">
+    <div class="success-content">
+      <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+      <h2>Order Confirmed!</h2>
+      <p class="order-id-label">Order Number: <strong id="confirmedOrderId">#AO-84920</strong></p>
+      <p class="success-desc">Thank you for welcoming Aura &amp; Oak into your living space. We've sent a detailed confirmation receipt to your email, and our white-glove logistics team will contact you to schedule delivery.</p>
+      <button class="btn btn-primary" onclick="closeSuccessModal()">Continue Shopping</button>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

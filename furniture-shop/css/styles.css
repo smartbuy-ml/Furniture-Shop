@@ -1,0 +1,111 @@
+/* Custom styling for Livarno Nordic Living Furniture Shop */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap');
+
+:root {
+  --color-primary: #1e2022;
+  --color-primary-light: #2c3036;
+  --color-accent: #c07a50; /* Warm terracotta */
+  --color-accent-hover: #a66239;
+  --color-sand: #fbf9f5;
+  --color-sand-card: #f4ede4;
+  --color-sage: #506456;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #2b2b2b;
+  background-color: #faf9f6;
+  overflow-x: hidden;
+}
+
+.font-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1ede6;
+}
+::-webkit-scrollbar-thumb {
+  background: #d1c7bc;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b5a99c;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes slideOutRight {
+  from { transform: translateX(0); }
+  to { transform: translateX(100%); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.04); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.35s ease-out forwards;
+}
+
+.animate-slide-right {
+  animation: slideInRight 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Product Card Hover effects */
+.product-card {
+  transition: transform 0.3s cubic-bezier(0.2, 0, 0, 1), box-shadow 0.3s cubic-bezier(0.2, 0, 0, 1);
+}
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.08), 0 10px 15px -3px rgba(0, 0, 0, 0.04);
+}
+
+.product-image-container img {
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.product-card:hover .product-image-container img {
+  transform: scale(1.06);
+}
+
+/* Toast Notification */
+.toast {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  transition: all 0.35s ease;
+}
+
+/* Color swatch pill */
+.color-swatch-dot {
+  position: relative;
+  transition: transform 0.15s ease;
+}
+.color-swatch-dot:hover {
+  transform: scale(1.2);
+}
+.color-swatch-dot.active {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #1e2022;
+}
+
+/* Line clamp helpers */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
